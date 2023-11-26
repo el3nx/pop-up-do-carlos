@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Notas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Calculadora de Notas</h2>
+        <button onclick="abrirPopup()">Iniciar</button>
+    </div>
+    
+    <script>
+        
+        function abrirPopup() {
+            
+            
+            var popup = window.open('popup.html', '_blank', 'width=400,height=300');
+            
+            popup.calcularNotas = calcularNotas;
+        }
+    </script>
+    
+
+</body>
+</html>
